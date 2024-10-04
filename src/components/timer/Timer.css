@@ -1,0 +1,72 @@
+.timer {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10vh;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: var(--digit-font-size);
+        width: auto;
+        inset: 0;
+        margin: auto;
+        position: relative;
+    }
+
+    span {
+        font-size: calc(var(--digit-font-size)*0.75);
+    }
+
+    p::before {
+        position: absolute;
+        left: 50%;
+        bottom: -35%;
+        transform: translate(-50%); 
+        font-size: calc(var(--digit-font-size)*0.25);
+        opacity: 0.65;
+    }
+
+    .day::before {
+        content: "Days";
+    }
+
+    .hour::before {
+        content: "Hours";
+    }
+    .minute::before {
+        content: "Minutes";
+    }
+    .second::before {
+        content: "Seconds";
+    }
+}
+
+button {
+    all: unsetว
+}
+
+.timer-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    --color: white;
+    --bg-color: black;
+    width: 25%;
+    aspect-ratio: 2.5;
+    background-color: var(--bg-color);
+    color: var(--color);
+    border-radius: 2rem;
+    border: 0.175rem solid black;
+    font-weight: 700;
+}
+
+.btn + .type2 {
+    --color: black;
+    --bg-color: white;
+}

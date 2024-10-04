@@ -1,0 +1,28 @@
+:root {
+    --white-color: white;
+
+    --bg-color: var(--white-color);
+    --digit-font-size: 5vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

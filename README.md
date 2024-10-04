@@ -1,0 +1,2 @@
+- mkae countdown
+- make responsive for portrait orientation
