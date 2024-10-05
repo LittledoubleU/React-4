@@ -45,8 +45,18 @@
     }
 }
 
-button {
-    all: unsetว
+input {
+    all: unset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    width: 100%;
 }
 
 .timer-btn {
@@ -57,7 +67,8 @@ button {
 .btn {
     --color: white;
     --bg-color: black;
-    width: 25%;
+    --width: 25%;
+    width: var(--width);
     aspect-ratio: 2.5;
     background-color: var(--bg-color);
     color: var(--color);
@@ -66,7 +77,12 @@ button {
     font-weight: 700;
 }
 
-.btn + .type2 {
+.btn.type2 {
     --color: black;
     --bg-color: white;
 }
+
+.container > .btn {
+    --width: 10.25%;
+}
+

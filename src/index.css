@@ -23,6 +23,8 @@ section {
     min-height: 100vh;
     font-family: "Roboto";
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2.5vw;
 }
