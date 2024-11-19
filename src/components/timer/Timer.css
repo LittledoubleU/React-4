@@ -1,9 +1,9 @@
 .timer {
-    width: 35%;
+    width: 35rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 10vh;
+    gap: 5rem;
 }
 
 .display {
@@ -83,6 +83,6 @@ input {
 }
 
 .container > .btn {
-    --width: 10.25%;
+    --width: 8.5rem;
 }
 

@@ -2,7 +2,7 @@
     --white-color: white;
 
     --bg-color: var(--white-color);
-    --digit-font-size: 5vw;
+    --digit-font-size: 5rem;
 }
 
 * {
@@ -27,4 +27,25 @@ section {
     justify-content: center;
     align-items: center;
     gap: 2.5vw;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .container {
+        transform: rotate(90deg)
+    }
+}
+
+@media all and (max-width: 480px) {
+    html {
+        font-size: 8px;
+    }
+
+    .container {
+        transform: rotate(90deg)
+    }
+
 }
