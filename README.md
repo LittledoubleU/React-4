@@ -1,2 +1,1 @@
-- mkae countdown
-- make responsive for portrait orientation
+# Enter: https://littledoubleu.github.io/React-4/
